@@ -1,0 +1,192 @@
+body {
+    max-width: 1512px;
+    margin: 0;
+}
+
+.r1c1 {
+    background-color: red;
+}
+
+.r1c2 {
+    background-color: darkblue;
+}
+
+.r2c1 {
+    background-color: goldenrod;
+}
+
+.r3c1 {
+    background-color: green;
+}
+
+.r3c2 {
+    background-color: purple;
+}
+
+.r3c3 {
+    background-color: violet;
+}
+
+.r4c1 {
+    background-color: orange;
+}
+
+.r4c2 {
+    background-color: yellow;
+}
+
+.r5c1 {
+    background-color: darkgreen;
+}
+
+.r5c2 {
+    background-color: lightblue;
+}
+
+.r5c3 {
+    background-color: brown;
+}
+
+.r5c4 {
+    background-color: violet;
+}
+
+.r6c1 {
+    background-color: darkred;
+}
+
+
+.frame {
+    width: 1512px;
+    margin: 0;
+    background-color: gray;
+    display: grid;
+    padding: 100px 50px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6 {
+    display: grid;
+    width: 90%;
+    margin: 10px auto;
+    padding-bottom: 1%;
+    column-gap: 1%;
+}
+
+.row1 {
+    height: 300px;
+    grid-template-columns: 30% 1fr;
+}
+
+.row2 {
+    height: 500px;
+    grid-template-columns: 1fr;
+
+}
+
+.row3 {
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row4 {
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row5 {
+    height: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.row6 {
+    height: 100px;
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 1000px) {
+    .frame {
+        width: 980px;
+        margin: 0;
+        background-color: whitesmoke;
+    }
+
+    .row1 {
+        height: 150px;
+    }
+
+    .row2 {
+        height: 250px;
+
+    }
+
+    .row3 {
+        height: 200px;
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .row4 {
+        height: 200px;
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .row5 {
+        height: 200px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10%;
+        column-gap: 2%;
+    }
+
+    .row6 {
+        height: 50px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .frame {
+        width: 480px;
+        margin: 0;
+        background-color: grey;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+        height: 150px;
+    }
+
+    .row2 {
+        height: 100px;
+
+    }
+
+    .row3 {
+        height: 250px;
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .row4 {
+        height: 100px;
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .row5 {
+        height: 200px;
+        grid-template-columns: 1fr;
+        row-gap: 10%;
+    }
+
+    .row6 {
+        height: 25px;
+        grid-template-columns: 1fr;
+    }
+}
